@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang='LV'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>P06 Lab.d </title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="index.html">Atskaite</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="about.html">Secinājumi</a>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <div class="brand">
+          Druvis Ēriks Tulišs(141RMC192)
+        </div>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+        <div class="portfolio-items-wrapper">
+  
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(images/Titul.PNG)"></div>
+  
+            <div class="img-text-wrapper">
+              
+  
+              <div class="subtitle">Titul Lapa - "Vienkāršu elektrisku shēmu modelēšana"</div>
+            </div>
+          </div>
+  
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(images/1_nodala.PNG)"></div>
+            <div class="img-text-wrapper">
+             
+  
+              <div class="subtitle">Pirmā nodaļa - Teorētiskā daļa</div>
+            </div>
+          </div>
+  
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(images/Tabula.PNG)"></div>
+            <div class="img-text-wrapper">
+              
+  
+              <div class="subtitle">Aprēķins ar rezultātu tabulu</div>
+            </div>
+          </div>
+  
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(images/Shema.PNG)"></div>
+            <div class="img-text-wrapper">
+             
+  
+              <div class="subtitle">Izmantotā shēma laboratorijas darbā</div>
+            </div>
+          </div>
+  
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(images/2_nodala.PNG)"></div>
+            <div class="img-text-wrapper">
+              
+  
+              <div class="subtitle">Otrā nodaļa - Shemā gEDA.</div>
+            </div>
+          </div>
+  
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(images/Gnetlist.PNG)"></div>
+            <div class="img-text-wrapper">
+              
+  
+              <div class="subtitle">gNetlist, kuru es biju ieguvis no P01 01.net.</div>
+            </div>
+          </div>
+  
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(images/Ngspice.PNG)"></div>
+            <div class="img-text-wrapper">
+              
+  
+              <div class="subtitle">nGsplice iegūtais R1 grafiks.</div>
+            </div>
+          </div>
+  
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(images/R2.PNG)"></div>
+            <div class="img-text-wrapper">
+              
+  
+              <div class="subtitle">nGsplice iegūtais R2 grafiks, ar īsu paskaidorjumu.</div>
+            </div>
+          </div>
+  
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(images/QUCS.PNG)"></div>
+            <div class="img-text-wrapper">
+             
+  
+              <div class="subtitle">OUCS programmā radītā līdzstrāvas shēma</div>
+            </div>
+          </div>
+  
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(images/Grafiks.PNG)"></div>
+            <div class="img-text-wrapper">
+              
+  
+              <div class="subtitle">Iegūtais grafiks ar rezultātu tabulu.</div>
+            </div>
+          </div>
+  
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(images/Litertura.PNG)"></div>
+            <div class="img-text-wrapper">
+              
+              <div class="subtitle">Litertūra, kas bija P03 minēts, ka jāievieto.</div>
+            </div>
+          </div>
+  
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(images/youtube.jpg)"></div>
+            <div class="img-text-wrapper">
+              
+  
+              <div class="subtitle">Youtube attēls tika ievietots, jo iesācēj apmācību un informācīju, kas saistījās ar HTML un CSS internet lapas veidošanu tika ņemt no šejienes</div>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  
+  </body>
+  
+  <script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+  
+    portfolioItems.forEach(portfolioItem => {
+      portfolioItem.addEventListener('mouseover', () => {
+        console.log(portfolioItem.childNodes[1].classList)
+        portfolioItem.childNodes[1].classList.add('image-blur');
+      });
+  
+      portfolioItem.addEventListener('mouseout', () => {
+        console.log(portfolioItem.childNodes[1].classList)
+        portfolioItem.childNodes[1].classList.remove('image-blur');
+      });
+    });
+  
+  </script>
+  
+  </html
